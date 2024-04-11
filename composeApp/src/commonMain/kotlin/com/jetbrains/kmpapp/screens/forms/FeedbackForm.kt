@@ -326,7 +326,7 @@ fun RatingForm(onDismissRequest: () -> Unit) {
 
             SmileyRatingBarSample()
             DescriptionInput(onDescriptionChanged = { description ->
-                // Handle the address change here
+                // Handle the description change here
                 println("Description  changed: $description")
             })
 

@@ -49,7 +49,6 @@ data object ListScreen : Screen {
                 ObjectGrid(
                     objects = objects,
                     onObjectClick = { objectId ->
-                        println("This is a object id $objectId")
                         navigator.push(DetailScreen(objectId))
                     }
                 )

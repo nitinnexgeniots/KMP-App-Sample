@@ -50,6 +50,8 @@ import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import com.jetbrains.kmpapp.MR
 import com.jetbrains.kmpapp.screens.diceroll.DiceRollScreen
+import com.jetbrains.kmpapp.screens.feedBack.FeedBackScreen
+import com.jetbrains.kmpapp.screens.forms.FeedbackForm
 import com.jetbrains.kmpapp.theme.BgSocial
 import com.jetbrains.kmpapp.theme.BorderColor
 import com.jetbrains.kmpapp.theme.BrandColor
@@ -201,13 +203,14 @@ fun PasswordInputComponent(labelVal: String,lock:ImageResource,pheyeclosedfill:I
 
 @Composable
 fun ForgotPasswordTextComponent() {
+    val navigator = LocalNavigator.currentOrThrow
     Text(
         text = stringResource(MR.strings.forgotPassword),
         color = BrandColor,
         fontWeight = FontWeight.Bold,
         fontSize = 20.sp,
         modifier = Modifier.clickable {
-          //  navController.navigate("ForgotPassword")
+            navigator.push(FeedBackScreen)
         }
     )
 }

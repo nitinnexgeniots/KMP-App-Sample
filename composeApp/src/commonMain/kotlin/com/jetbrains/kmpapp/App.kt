@@ -14,10 +14,10 @@ import com.jetbrains.kmpapp.screens.videoplayer.VideoPlayerScreen
 fun App() {
     MaterialTheme {
 //        Navigator(ListScreen)                 // Fetch Data From Api and Display List using Ktor
-//        Navigator(LoginScreen)                // LogIn Screen UI
+          Navigator(LoginScreen)                // LogIn Screen UI
 //        Navigator(DiceRollScreen)             // Dice Roll UI
 //        Navigator(VideoPlayerScreen)          // Video Play Sample
 //        Navigator(DetailScreen(436532))       // Fetch Data From Api and Display its Details using Ktor
-          Navigator(FeedBackScreen)             // UI of feedback form using radio Button and animation
+//          Navigator(FeedBackScreen)             // UI of feedback form using radio Button and animation
     }
 }
