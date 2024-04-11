@@ -67,7 +67,7 @@ fun LoginScreenUI() {
                             initialText = "Haven't we seen you around here before? ",
                             action = "Join our coven!"
                         )
-                        FeedbackForm()
+
                     }
                 }
             }
