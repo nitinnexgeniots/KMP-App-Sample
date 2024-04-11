@@ -52,6 +52,8 @@ import com.jetbrains.kmpapp.MR
 import com.jetbrains.kmpapp.screens.diceroll.DiceRollScreen
 import com.jetbrains.kmpapp.screens.feedBack.FeedBackScreen
 import com.jetbrains.kmpapp.screens.forms.FeedbackForm
+import com.jetbrains.kmpapp.screens.list.ListScreen
+import com.jetbrains.kmpapp.screens.videoplayer.VideoPlayerScreen
 import com.jetbrains.kmpapp.theme.BgSocial
 import com.jetbrains.kmpapp.theme.BorderColor
 import com.jetbrains.kmpapp.theme.BrandColor
@@ -275,8 +277,11 @@ fun BottomComponent(google:ImageResource) {
             )
         }
         Spacer(modifier = Modifier.height(5.dp))
+        val navigator = LocalNavigator.currentOrThrow
         Button(
-            onClick = { /*TODO*/ },
+            onClick = {
+                      navigator.push(VideoPlayerScreen)
+            },
             modifier = Modifier
                 .fillMaxWidth(),
             colors = ButtonDefaults.outlinedButtonColors(
@@ -305,8 +310,8 @@ fun BottomComponent(google:ImageResource) {
 
 @Composable
 fun BottomLoginTextComponent(initialText: String, action: String) {
-  val joinourcoven=  stringResource(MR.strings.joinourcoven)
-
+    val joinourcoven=  stringResource(MR.strings.joinourcoven)
+    val navigator = LocalNavigator.currentOrThrow
     val annotatedString = buildAnnotatedString {
         withStyle(style = SpanStyle(color = Tertirary)) {
             append(initialText)
@@ -322,7 +327,9 @@ fun BottomLoginTextComponent(initialText: String, action: String) {
             .firstOrNull()?.also { span ->
                println("BottomLoginTextComponent ${span.item} is Clicked")
                 if (span.item == joinourcoven) {
-                   // navController.navigate("SignupScreen")
+                    navigator.push(ListScreen)
+
+                    // navController.navigate("SignupScreen")
                 }
             }
     })
@@ -366,6 +373,7 @@ fun SignupTermsAndPrivacyText() {
 
 @Composable
 fun BottomSignupTextComponent() {
+    val navigator = LocalNavigator.currentOrThrow
     val initialText = "Are you a familiar spirit? "
     val loginText = "Log In"
     val lastText = " again and join our Halloween party!"
