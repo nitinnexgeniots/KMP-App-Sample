@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="label_title">Title</string>
+    <string name="label_artist">Artist</string>
+    <string name="label_date">Date</string>
+    <string name="label_dimensions">Dimensions</string>
+    <string name="label_medium">Medium</string>
+    <string name="label_department">Department</string>
+    <string name="label_repository">Repository</string>
+    <string name="label_credits">Credits</string>
+    <string name="back">Back</string>
+    <string name="no_data_available">No data available</string>
+
+    <string name="password">Password?</string>
+    <string name="phone">mobile</string>
+    <string name="emailID">email ID</string>
+    <string name="atsymbol">at_symbol</string>
+    <string name="showPassword">Show Password</string>
+    <string name="hidePassword">Hide Password</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="submit">Submit</string>
+    <string name="continuee">Continue</string>
+    <string name="or">OR</string>
+    <string name="googleicon">google icon</string>
+    <string name="loginWithGoogle">Login With Google</string>
+    <string name="joinourcoven">Join our coven!</string>
+    <string name="back">Back</string>
+    <string name="back">Back</string>
+    <string name="back">Back</string>
+    <string name="back">Back</string>
+    <string name="back">Back</string>
+    <string name="back">Back</string>
+
+
+
+
+
+</resources>
