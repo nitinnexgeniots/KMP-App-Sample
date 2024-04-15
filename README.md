@@ -4,6 +4,11 @@ This is a basic Kotlin Multiplatform app template for Android and iOS. It includ
 
 
 ![Screenshots of the app](images/screenshots.png)
+![Screenshots of the app](images/img.png)
+![Screenshots of the app](images/img_1.png)
+![Screenshots of the app](images/img_2.png)
+![Screenshots of the app](images/img_3.png)
+![Screenshots of the app](images/img_4.png)
 
 ### Technologies
 
