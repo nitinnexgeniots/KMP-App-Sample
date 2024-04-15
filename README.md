@@ -3,7 +3,6 @@
 This is a basic Kotlin Multiplatform app template for Android and iOS. It includes shared business logic and data handling, and a shared UI implementation using Compose Multiplatform.
 
 
-![Screenshots of the app](images/screenshots.png)
 ![Screenshots of the app](images/img.png)
 ![Screenshots of the app](images/img_1.png)
 ![Screenshots of the app](images/img_2.png)
